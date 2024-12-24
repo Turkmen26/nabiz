@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="İletişim sayfası">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="Tanitim.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>İletişim</h1>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="tanitim.html" title="Anasayfa">
+            <i class="fas fa-home"></i>
+        </a>
+        <div class="dropdown-button" title="Menü">
+            <i class="fas fa-bars"></i>
+            <div class="dropdown-content">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana İçerik -->
+    <div class="content-container">
+        <!-- Geri Bildirim Formu -->
+        <div class="form-container">
+            <h2>Geri Bildirim Formu</h2>
+            <form action="https://formsubmit.co/kadir.alp.trkmn@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="index.html">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="mb-3">
+                    <label for="adsoyad" class="form-label">Ad, Soyad:</label>
+                    <input type="text" class="form-control" id="adsoyad" name="adsoyad" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-Posta:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="konu" class="form-label">Konu:</label>
+                    <input type="text" class="form-control" id="konu" name="konu" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mesaj" class="form-label">Mesaj:</label>
+                    <textarea class="form-control" id="mesaj" name="mesaj" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+
+        <!-- İletişim Bilgileri -->
+        <div class="contact-section">
+            <div class="contact-icons">
+                <h2><i class="fas fa-envelope"></i> Bize Ulaşın</h2>
+                <p>
+                    <a href="mailto:kadir.alp.trkmn@gmail.com" title="E-posta Gönder">
+                        <i class="fas fa-envelope"></i> <strong></strong>
+                        <a href="https://www.linkedin.com/in/kadir-t%C3%BCrkmen-14245525b" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>  Kadir Türkmen
+                        </a>
+                        
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:tunahan7567@gmail.com" title="E-posta Gönder">
+                        <i class="fas fa-envelope"></i> <strong></strong>
+                        <a href="https://www.linkedin.com/in/tunahanbalci" target="_blank" title="LinkedIn">
+                             <i class="fab fa-linkedin"></i> Tunahan Balcı
+                        </a>
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:rumeysakaya469@gmail.com" title="E-posta Gönder">
+                        <i class="fas fa-envelope"></i> <strong></strong>
+                        <a href="https://www.linkedin.com/in/rumeysakaya469" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>  Rumeysa Kaya
+                        </a>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 İletişim Sayfası. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
